@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div className="flex w-full items-center justify-between gap-16 bg-neutral-800 p-8 font-semibold text-neutral-50 shadow-sm">
       <div>LostNFound</div>
