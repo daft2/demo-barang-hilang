@@ -19,20 +19,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
         <TRPCReactProvider>
-          <div>
-            {/* header */}
-            <div className="flex w-full items-center justify-between gap-16 bg-neutral-800 p-8 font-semibold text-neutral-50 shadow-sm">
-              <div>LostNFound</div>
-              <div className="flex gap-4">
-                <Link href="/dashboard">Dashboard</Link>
-                <Link href="/history">History</Link>
-              </div>
-              <div className="flex">
-                <span>Logout</span>
-              </div>
-            </div>
-            {children}
-          </div>
+          <div>{children}</div>
         </TRPCReactProvider>
       </body>
     </html>
